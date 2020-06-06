@@ -5,7 +5,7 @@ import time
 
 
 
-
+# setup the GPIO pins on raspberry pi
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 GPIO.setup(17,GPIO.OUT)
@@ -13,6 +13,9 @@ GPIO.setup(17,GPIO.OUT)
 # initialize servo for the robot's base
 servoBase=GPIO.PWM(17,50)
 servoBase.start(0)
+
+# Initialize the LEDs here
+#########################
 
 # initialize curses to accept keyboard input
 # from user
@@ -26,7 +29,9 @@ screen.keypad(True)
 
 lastAngle=0
 minAngle=18
-servoBase.ChangeDutyCycle(2+(lastAngle/18))
+# uncomment the following line to have the robot always go to 
+# initial position whenever the script is run.
+#servoBase.ChangeDutyCycle(2+(lastAngle/18))
 
 # the main program starts
 if __name__ == '__main__':
@@ -34,7 +39,6 @@ if __name__ == '__main__':
     while True:
 
         Char = screen.getch()
-
 
         # if the user presses the <- key on the keyboard
         # then we need to move the robot to the left by 30 degree.
