@@ -7,7 +7,9 @@ This project strives to build a robot based on the Raspberry Pi platform which w
 2. Two section arms each wth 180 degree movement.
 3. Gripper to handle objects
 
-# GPIO Pin Connections
+# Hardware Information
+
+## GPIO Pin Connections
 
 | Pin number | Device connected	|
 | ---------- | ---------------- |
@@ -18,3 +20,9 @@ This project strives to build a robot based on the Raspberry Pi platform which w
 | 13	     | Servo 1 btn 2	|
 | 6	     | Servo 2 btn 1	|
 | 5	     | Servo 2 btn 2	|
+
+## Circuit Diagram
+
+https://crcit.net/c/65a66cba227b43adb18806c92c64052a
+
+
