@@ -14,7 +14,7 @@ This project strives to build a robot based on the Raspberry Pi platform which w
 | 17	     | Servo 1		|
 | 18	     | Servo 2		|
 | 26	     | Terminate button |
-| 19	     |			| 
-| 13	     |			|
-| 6	     |			|
-| 5	     |			|
+| 19	     | Servo 1 btn 1	| 
+| 13	     | Servo 1 btn 2	|
+| 6	     | Servo 2 btn 1	|
+| 5	     | Servo 2 btn 2	|
